@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 public class NotificationController {
 
     @MessageMapping("/sendMessage")
-    @SendTo("/topic/notification")
+    @SendTo("/topic/notifications")
     public String sendMessage(String message) {
         return message;
     }
